@@ -22,4 +22,17 @@ class Student extends Person {
     alert(`Student: name= ${name}, age= ${age}, gender= ${gender}, course= ${course} and group= ${group}`)
   }
 }
-let Carol = new Student('art', '3º');
+let carol = new Student('Carol', 21, 'female', 'art', '3º');
+
+//Third part
+class Professor extends Person {
+  constructor(name, age, gender, subject, level) {
+    super(name, age, gender)
+    this.subject = subject;
+    this.level = level;
+  }
+  asignet() {
+    alert(`Professor: name= ${name}, age= ${age}, gender= ${gender}, subject= ${subject} and level= ${level}`)
+  }
+}
+let alex = new Professor('Alex', 45, 'male', 'developmet', 'master');
